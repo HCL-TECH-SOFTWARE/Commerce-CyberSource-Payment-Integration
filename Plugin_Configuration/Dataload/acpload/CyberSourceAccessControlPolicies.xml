@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE Policies SYSTEM "../dtd/accesscontrolpolicies.dtd">
+
+<Policies>
+
+ <Action Name="ExecuteCommand" CommandName="Execute"/>
+ 
+<Action Name="StandardCyberSource" CommandName="StandardCyberSource" />
+
+
+ <ActionGroup Name="AllSiteUsersViews" OwnerID="RootOrganization">
+	<ActionGroupAction Name="StandardCyberSource" />
+	
+ </ActionGroup> 
+	
+ 	<ResourceCategory Name="com.hcl.commerce.payments.cybersource.commands.HCLCyberSourceGenerateKeyCmdResourceCategory"
+			ResourceBeanClass="com.hcl.commerce.payments.cybersource.commands.HCLCyberSourceGenerateKeyCmd">
+		<ResourceAction Name="ExecuteCommand" />
+	</ResourceCategory>		
+	
+<ResourceGroup Name="AllSiteUserCmdResourceGroup"  OwnerID="RootOrganization">
+	
+	<ResourceGroupResource Name="com.hcl.commerce.payments.cybersource.commands.HCLCyberSourceGenerateKeyCmdResourceCategory" />
+</ResourceGroup>
+ 
+
+ 
+</Policies>

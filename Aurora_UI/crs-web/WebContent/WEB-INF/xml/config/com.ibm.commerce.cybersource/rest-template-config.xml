@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of HCL Technologies
+
+  HCL Commerce
+
+  (C) Copyright HCL Technologies Limited 1996, 2021
+
+ =================================================================
+-->
+<_config:rest-action-config xmlns:_config="http://www.ibm.com/xmlns/prod/commerce/foundation/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/xmlns/prod/commerce/foundation/config ../../xsd/rest-action-config.xsd ">
+	<resource path="{serverHost}/{contextPath}/storeId/{storeId}/cybersource" name="cybersource">
+	 <serverParam name="serverHost">$WCParam.serverHost</serverParam>
+	 <serverParam name="contextPath">$WCParam.contextPath</serverParam>
+	 <serverParam name="storeId">$WCParam.storeId</serverParam>
+		
+				<method name="flexkey" httpMethod="POST" path="flexkey">
+			<template>
+				<![CDATA[{
+					"encryptionType" : "$encryptionType",
+					"targetOrigin" : "$targetOrigin",
+				}]]>
+			</template>
+		</method>.
+			</resource>
+</_config:rest-action-config>

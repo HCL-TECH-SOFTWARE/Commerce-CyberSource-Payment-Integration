@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ =================================================================
+  Licensed Materials - Property of HCL Technologies
+
+  HCL Commerce
+
+  (C) Copyright HCL Technologies Limited 1996, 2020
+
+ =================================================================
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- Add or import customer view definitions here 
+  <import resource="classpath:/WEB-INF/spring/AuroraStorefrontAssetStore/{my-views.xml}"/> 
+  <bean id="TopCategoriesDisplay/AuroraStorefrontAssetStore" class="com.ibm.commerce.store.mvc.view.spring.StoreInternalResourceView"> 
+    <property name="url" value="/ShoppingArea/CatalogSection/CategorySubsection/MyTopCategoriesDisplay.jsp"/>  
+    <property name="https" value="1"/>  
+    <property name="credentialsAccepted" value="P"/> 
+    <property name="generic" value="1"/>
+  </bean>
+  -->     
+
+<!-- Cybersoure start -->
+    <bean id="StandardCyberSource" class="com.ibm.commerce.store.mvc.view.spring.StoreInternalResourceView"> 
+    <property name="url" value="/Snippets/EDP/PaymentMethods/StandardCyberSource.jsp"/>
+	<property name="https" value="1"/> 
+  </bean> 
+  <!-- Cybersoure end --> 
+  
+</beans>
