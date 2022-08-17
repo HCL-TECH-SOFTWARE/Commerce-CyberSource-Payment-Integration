@@ -23,7 +23,7 @@ https://api.cybersource.com/pts/v2/payments
 
 ## Prerequisites
 *	HCL Commerce V9.1.x/ HCL Commerce React Storefront
-
+* This version of asset is tested with HCLC 9.1.10.0
 *	CyberSource Merchant Account. Create Merchant account using below link.
 
 https://ebc2.cybersource.com/ebc2/registration/external
