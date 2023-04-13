@@ -21,6 +21,8 @@ https://api.cybersource.com/flex/v1/tokens
 
 https://api.cybersource.com/pts/v2/payments
 
+* 3D-Secure is Enabled
+
 ## Prerequisites
 *	HCL Commerce V9.1.x/ HCL Commerce React Storefront
 * This version of asset is tested with HCLC 9.1.11.0
